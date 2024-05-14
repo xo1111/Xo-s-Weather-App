@@ -61,6 +61,7 @@ header{
 .weather-app-details p {
     margin-top: 0;
     margin-bottom: 16px;
+    color: rgba(39, 33, 66, 0.4);
 }
 .weather-app-details h2 {
     margin-bottom: 0;
@@ -68,6 +69,10 @@ header{
 }
 .date-time {
     margin-left: 20px;
+}
+p strong {
+    font-weight: 100px;
+    color:#64a36f ;
 }
 footer{
     border-top: 1px solid #cef0b9;
