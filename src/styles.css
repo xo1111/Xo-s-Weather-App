@@ -40,10 +40,6 @@ body {
   transform:translate(-50%, -50%);
 }
 
-h1 {
-  font-family:monospace;
-}
-
 @keyframes slide {
   0% {
     transform:translateX(-25%);
@@ -70,7 +66,7 @@ a{
 }
 h1 {
     text-align: center;
-    color: #dcc532;
+    color:#31A3F6;
 
 }
 header{
@@ -86,7 +82,7 @@ header{
     font-size: 16px;
 }
 .search-form-button{
-    background:#64a36f;
+    background:#62C380;
     border:none;
     padding: 20px 22px;
     border-radius: 150px;
