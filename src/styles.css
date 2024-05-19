@@ -104,9 +104,10 @@ header{
     font-size: 20px;
 }
 .weather-app-icon {
-    margin-top: 30px;
-    margin-left: 10px;
-    font-size: 50px;
+   width: 80px;
+   height: 80px;
+   margin-top: 7px;
+  
 }
 
 .weather-app-details p {
