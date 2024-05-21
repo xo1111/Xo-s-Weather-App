@@ -89,7 +89,7 @@ header{
 }
 .weather-app-details {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .weather-app-temp-details {
     display: flex;
