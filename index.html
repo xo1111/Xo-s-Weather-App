@@ -38,10 +38,10 @@
         <div class="weather-app-icon" id="icon">
         </div> 
          </div>
-           <p>
-            Humidity: <strong id="humidity"></strong> <br />
-            Wind: <strong id="wind-speed"></strong>
-        </p>
+           <ul>
+            <li> Humidity: <strong id="humidity"></strong> </li>
+            <li> Wind: <strong id="wind-speed"></strong> </li>
+        </ul>
         </div> 
         <div>
         <h2 id="city-name">
@@ -53,30 +53,64 @@
         </p>
         </div>
         </div>
-         <div class="weather-forecast">
+        <div class="weather-forecast">
             <div class="row">
-                <div class="col-2"> 
+                <div class="col-2">
                     <div class="weather-forecast-date">
-                    Thu 
+                    Thu
                     </div>
-                    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" alt="" width="45"/>
-                    <div class="weather-forecast-temperatures">
-                    <span class="weather-forcast-temperature-max">
-                    18 
-                     </span>
-                    <span class="weather-forcast-temperature-min">
-                    12
-                     </span> 
-                </div>
+                  <div>
+                    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" 
+                    width="42" 
+                    alt="" />
+                  </div>  
+                  <div class="weather-forecast-temperatures">
+
+                    <span class="weather-forecast-temperature-max"> 
+                        18°
+                    </span>
+                     
+                    <span class="weather-forecast-temperature-min">
+                        12° 
+                    </span>
+                  </div>  
                 </div>
             </div>
         </div>
-     
-    </main>
-    <footer>
+<!--remove once  issue of verticle data solved-->
+<div class="weather-forecast">
+            <div class="row">
+                <div class="col-2">
+                    <div class="weather-forecast-date">
+                    Thu
+                    </div>
+                  <div>
+                    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" 
+                    width="42" 
+                    alt="" />
+                  </div>  
+                  <div class="weather-forecast-temperatures">
+
+                    <span class="weather-forecast-temperature-max"> 
+                        18°
+                    </span>
+                     
+                    <span class="weather-forecast-temperature-min">
+                        12° 
+                    </span>
+                  </div>  
+                </div>
+            </div>
+        </div>
+<!--end of repeat code-->
+          <footer>
         Coded by <a href="https://github.com/xo1111"  target = "_blank">Xola Abara</a> is open-sourced on <a href="https://github.com/xo1111/Xo-s-Weather-App"  target = "_blank">GitHub</a> and is hosted on <a href="https://main--xo-weather-app.netlify.app/"  target = "_blank">Netlify</a> 
     </footer>
      </div>
+         </div>
+     
+    </main>
+    
      <script src="src/java.js"></script>
 </body>
 </div>

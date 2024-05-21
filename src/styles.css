@@ -122,27 +122,32 @@ header{
 .date-time {
     margin-left: 20px;
 }
-.weather-forecast {
-  margin-right: 500px;
-  margin-top: 15px;
-  color: #000;
-}
-.weather-forecast-date,{
+.weather-forecast{
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}  
+.weather-forecast-date {
   font-size: 16px;
   opacity: 0.6;
+ 
 }
-.weather-forcast-temperature-min{
-  opacity: 0.5;
+.weather-forecast-temperature-min {
+  opacity:  0.5;
 }
-.weather-forecast-temperatures{
+.weather-forecast-temperatures {
   font-size: 13px;
-
 }
-p strong {
+li {
+  list-style: none;
+}
+li strong {
     font-weight: 100px;
     color:#64a36f ;
 }
-footer{
+footer {
     border-top: 1px solid #cef0b9;
     padding:30px 0px 0px 0px;
     text-align: center;
