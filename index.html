@@ -1,117 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="src/styles.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
-    <title>Xo's Weather App</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  <title>Xo's Weather App</title>
 </head>
 <div class="bg"></div>
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div class="content">
+
   <body>
     <div class="weather-app">
-    <header>
+      <header>
         <h1>
-            Weather App🌡️
-        </h1> 
+          Weather App🌡️
+        </h1>
         <form class="search-form" id="search-form">
-            <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-form-input"/>
-            <input type="submit" value="🔍" class="search-form-button">
+          <input type="search" placeholder="Enter a city..." required class="search-form-input"
+            id="search-form-input" />
+          <input type="submit" value="🔍" class="search-form-button">
         </form>
-    </header>
+      </header>
 
-    <main>
+      <main>
         <div class="weather-app-details">
-       <div>
-        <div class="weather-app-temp-details">
-         <div class="weather-app-temperature" id="temperature"></div> 
-         <div class="weather-app-unit">°c</div> 
-        <!--<div class="weather-app-icon">🌥</div>  --> 
-        <div class="weather-app-icon" id="icon">
-        </div> 
-         </div>
-           <ul>
-            <li> Humidity: <strong id="humidity"></strong> </li>
-            <li> Wind: <strong id="wind-speed"></strong> </li>
-        </ul>
-        </div> 
-        <div>
-        <h2 id="city-name">
-            
-        </h2>
-        <p class="date-time">
-           <span id="time"></span> <span id="description"></span>
-            
-        </p>
-        </div>
+          <div>
+            <div class="weather-app-temp-details">
+              <div class="weather-app-temperature" id="temperature"></div>
+              <div class="weather-app-unit">°c</div>
+              <!--<div class="weather-app-icon">🌥</div>  -->
+              <div class="weather-app-icon" id="icon">
+              </div>
+            </div>
+            <ul>
+              <li> Humidity: <strong id="humidity"></strong> </li>
+              <li> Wind: <strong id="wind-speed"></strong> </li>
+            </ul>
+          </div>
+          <div>
+            <h2 id="city-name">
+
+            </h2>
+            <p class="date-time">
+              <span id="time"></span> <span id="description"></span>
+
+            </p>
+          </div>
         </div>
         <div class="weather-forecast">
-            <div class="row">
-                <div class="col-2">
-                    <div class="weather-forecast-date">
-                    Thu
-                    </div>
-                  <div>
-                    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" 
-                    width="42" 
-                    alt="" />
-                  </div>  
-                  <div class="weather-forecast-temperatures">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">
+                Thu
+              </div>
+              <div>
+                <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" width="42"
+                  alt="" />
+              </div>
+              <div class="weather-forecast-temperatures">
 
-                    <span class="weather-forecast-temperature-max"> 
-                        18°
-                    </span>
-                     
-                    <span class="weather-forecast-temperature-min">
-                        12° 
-                    </span>
-                  </div>  
-                </div>
-            </div>
-        </div>
-<!--remove once  issue of verticle data solved-->
-<div class="weather-forecast">
-            <div class="row">
-                <div class="col-2">
-                    <div class="weather-forecast-date">
-                    Thu
-                    </div>
-                  <div>
-                    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" 
-                    width="42" 
-                    alt="" />
-                  </div>  
-                  <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-temperature-max">
+                  18°
+                </span>
 
-                    <span class="weather-forecast-temperature-max"> 
-                        18°
-                    </span>
-                     
-                    <span class="weather-forecast-temperature-min">
-                        12° 
-                    </span>
-                  </div>  
-                </div>
+                <span class="weather-forecast-temperature-min">
+                  12°
+                </span>
+              </div>
             </div>
+          </div>
+          <!--remove once  issue of verticle data solved-->
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-date">
+                Thu
+              </div>
+              <div>
+                <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" width="42"
+                  alt="" />
+              </div>
+              <div class="weather-forecast-temperatures">
+
+                <span class="weather-forecast-temperature-max">
+                  18°
+                </span>
+
+                <span class="weather-forecast-temperature-min">
+                  12°
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <!--end of repeat code-->
         </div>
-<!--end of repeat code-->
-          <footer>
-        Coded by <a href="https://github.com/xo1111"  target = "_blank">Xola Abara</a> is open-sourced on <a href="https://github.com/xo1111/Xo-s-Weather-App"  target = "_blank">GitHub</a> and is hosted on <a href="https://main--xo-weather-app.netlify.app/"  target = "_blank">Netlify</a> 
-    </footer>
-     </div>
-         </div>
-     
-    </main>
-    
-     <script src="src/java.js"></script>
+        
+    </div>
+    <footer>
+          Coded by <a href="https://github.com/xo1111" target="_blank">Xola Abara</a> is open-sourced on <a
+            href="https://github.com/xo1111/Xo-s-Weather-App" target="_blank">GitHub</a> and is hosted on <a
+            href="https://main--xo-weather-app.netlify.app/" target="_blank">Netlify</a>
+        </footer>
+</div>
+
+</main>
+
+<script src="src/java.js"></script>
 </body>
 </div>
 

@@ -148,8 +148,9 @@ li strong {
     color:#64a36f ;
 }
 footer {
-    border-top: 1px solid #cef0b9;
+    border-top: 1px solid #31A3F6;
     padding:30px 0px 0px 0px;
     text-align: center;
+    margin-bottom: 30px;
     color: rgba(0,0,0,0.6);
 }
