@@ -60,3 +60,38 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchForm);
 
 searchCity("London");
+
+function displayForecast() {
+  let days = ["Tue","Wed"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-date">
+                ${day}
+              </div>
+              <div>
+                <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" width="42"
+                  alt="" />
+              </div>
+              <div class="weather-forecast-temperatures">
+
+                <span class="weather-forecast-temperature-max">
+                  18°
+                </span>
+
+                <span class="weather-forecast-temperature-min">
+                  12°
+                </span>
+              </div>
+            </div>
+          </div>
+     `;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
